@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/isoqgdmy/public_html/ghost_ai
+    - export DEPLOYPATH=/home/isoqgdmy/public_html/asahotvitz.com/ghost_ai
     - git fetch & git pull
     - /bin/cp -R public $DEPLOYPATH
     - /bin/cp -R src $DEPLOYPATH
