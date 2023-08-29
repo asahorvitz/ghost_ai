@@ -4,8 +4,8 @@ deployment:
     - export DEPLOYPATH=/home/isoqgdmy/public_html/asahorvitz.com/laumasite/ghost_ai
     - git fetch & git pull
     - mkdir $DEPLOYPATH
-    - /bin/cp -R src $DEPLOYPATH
-    - /bin/cp -R public $DEPLOYPATH
+    - /bin/cp -a src $DEPLOYPATH
+    - /bin/cp -a public $DEPLOYPATH
     - /bin/cp package-lock.json $DEPLOYPATH
     - /bin/cp package.json $DEPLOYPATH
     - cd $DEPLOYPATH
