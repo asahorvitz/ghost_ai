@@ -1,7 +1,7 @@
 {
   "name": "ghost-ai",
   "version": "0.2.0",
-  "homepage": "https://asahorvitz.com/ghost_machine/",
+  "homepage": "https://asahorvitz.com/ghost_ai/",
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.4.1",
