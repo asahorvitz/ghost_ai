@@ -8,6 +8,6 @@ deployment:
     - /bin/cp package-lock.json $DEPLOYPATH
     - /bin/cp package.json $DEPLOYPATH
     - cd $DEPLOYPATH
-    - npm i
-    - npm run build
-    - serve -s build
+    - npm i >> i_out.txt
+    - npm run build >> run_build_out.txt
+    - serve -s build >> serve_out.txt
