@@ -15,4 +15,4 @@ deployment:
     - TZ='Europe/London' date >> run_build_out.txt
     - npm run build >> run_build_out.txt
     - TZ='Europe/London' date >> serve_out.txt 2>&1
-    - serve -s build >> serve_out.txt 2>&1
+    - serve -s public >> serve_out.txt 2>&1
