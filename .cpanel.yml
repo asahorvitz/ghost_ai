@@ -8,6 +8,7 @@ deployment:
     - /bin/cp -a public $DEPLOYPATH
     - /bin/cp package-lock.json $DEPLOYPATH
     - /bin/cp package.json $DEPLOYPATH
+    - /bin/cp babel.config.json $DEPLOYPATH
     - cd $DEPLOYPATH
     - TZ='Europe/London' date >> i_out.txt
     - npm i >> i_out.txt 2>&1
