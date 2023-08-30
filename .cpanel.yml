@@ -13,7 +13,6 @@ deployment:
     - TZ='Europe/London' date >> i_out.txt
     - npm i >> i_out.txt 2>&1
     - TZ='Europe/London' date >> run_build_out.txt
-    - npx babel src --out-dir lib >> run_build_out.txt 2>&1
     - npm run build >> run_build_out.txt
     - TZ='Europe/London' date >> serve_out.txt 2>&1
     - serve -s build >> serve_out.txt 2>&1

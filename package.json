@@ -21,8 +21,10 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "clean": "rm -rf build && mkdir build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build-app": "babel src --out-dir build",
+    "build": "npm run clean && npm run build-app",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
