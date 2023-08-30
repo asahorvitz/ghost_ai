@@ -9,6 +9,10 @@ deployment:
     - /bin/cp package-lock.json $DEPLOYPATH
     - /bin/cp package.json $DEPLOYPATH
     - cd $DEPLOYPATH
+    - TZ='Europe/London' date >> i_out.txt
     - npm i >> i_out.txt
+    - TZ='Europe/London' date >> run_build_out.txt
+    - npx babel src --out-dir lib >> run_build_out.txt
     - npm run build >> run_build_out.txt
+    - TZ='Europe/London' date >> serve_out.txt
     - serve -s build >> serve_out.txt
