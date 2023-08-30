@@ -2,7 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/isoqgdmy/public_html/asahorvitz.com/laumasite/ghost_ai
-    - git fetch & git pull
     - mkdir $DEPLOYPATH
     - /bin/cp -a src $DEPLOYPATH
     - /bin/cp -a public $DEPLOYPATH
@@ -11,3 +10,4 @@ deployment:
     - cd $DEPLOYPATH
     - npm i
     - npm run build
+    - serve -s build
