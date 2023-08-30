@@ -1,6 +1,7 @@
 {
-  "name": "pwr-frontend",
-  "version": "0.1.0",
+  "name": "ghost-ai",
+  "version": "0.2.0",
+  "homepage": "https://asahorvitz.com/ghost_ai/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.4.1",
