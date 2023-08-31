@@ -160,7 +160,8 @@ class App extends Component {
       topic_placeholder, topic_label, generate_button_text, size_label,
       dark_button_text, light_button_text, font_button_text, story_temp_label,
       max_len_label, story_placeholder, fonts, save_button_text, font_size,
-      clean_button_text, raw_button_text, raw_button, loading_text
+      clean_button_text, raw_button_text, raw_button, loading_text, min_temp,
+      max_temp, def_temp
     } = params;
     const { classes } = this.props;
     return (
@@ -313,13 +314,13 @@ class App extends Component {
                   </Typography>
                   <Slider
                     aria-label="Always visible"
-                    defaultValue={0.5}
+                    defaultValue={def_temp}
                     valueLabelFormat={(value)=>(
                       <span style={{fontFamily: fonts[font]}}>{value}</span>
                     )}
                     step={0.01}
-                    min={0.03}
-                    max={4.5}
+                    min={min_temp}
+                    max={max_temp}
                     valueLabelDisplay="on"
                     style={{
                       backgroundColor: dark?'black':'white',
