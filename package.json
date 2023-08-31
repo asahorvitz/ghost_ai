@@ -1,7 +1,7 @@
 {
   "name": "ghost-ai",
   "version": "0.2.0",
-  "homepage": "https://asahorvitz.com/ghost_ai/",
+  "homepage": "https://localhost:3000/",
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.4.1",
@@ -21,10 +21,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "clean": "rm -rf build && mkdir build",
     "start": "react-scripts start",
-    "build-app": "babel src --out-dir build",
-    "build": "npm run clean && npm run build-app",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
