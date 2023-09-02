@@ -134,7 +134,7 @@ class App extends Component {
     this.setState({loading: true})
     $.ajax({
       type: "GET",
-      url: "http://127.0.0.1:5000/api/story",
+      url: "http://asahorvitz.com:5000/api/story",
       data: {
         topic: this.state.topic,
         story_temp: this.state.storyDiversity,
