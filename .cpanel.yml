@@ -17,4 +17,4 @@ deployment:
     - TZ='Europe/London' date >> setup.log
     - npm run build >> setup.log 2>&1
     - TZ='Europe/London' date >> serve.log 2>&1
-    - ./procemon.sh "serve -s build" >> serve.log 2>&1
+    - bash procemon.sh >> serve.log 2>&1
