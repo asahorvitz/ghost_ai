@@ -1,7 +1,7 @@
 {
   "name": "ghost-ai",
   "version": "0.2.0",
-  "homepage": "https://localhost:3000/ghost_ai", 
+  "homepage": "https://localhost:3000/", 
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.4.1",
