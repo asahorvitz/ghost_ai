@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/isoqgdmy/public_html/asahorvitz.com/laumasite/ghost_ai
+    - export DEPLOYPATH=/home/isoqgdmy/public_html/asahorvitz.com/laumasite/ghost
     - rm -rf $DEPLOYPATH
     - mkdir $DEPLOYPATH
     - /bin/cp -a src $DEPLOYPATH
