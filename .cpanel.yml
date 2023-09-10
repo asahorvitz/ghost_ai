@@ -6,12 +6,12 @@ deployment:
     - mkdir $DEPLOYPATH
     - /bin/cp -a src $DEPLOYPATH
     - /bin/cp -a public $DEPLOYPATH
+    - /bin/cp -a assets $DEPLOYPATH
     - /bin/cp package-lock.json $DEPLOYPATH
     - /bin/cp package.json $DEPLOYPATH
     - /bin/cp babel.config.json $DEPLOYPATH
-    - /bin/cp procemon.sh $DEPLOYPATH
+    - /bin/cp home.html $DEPLOYPATH
     - cd $DEPLOYPATH
-    - chmod -x procemon.sh
     - TZ='Europe/London' date >> setup.log
     - npm i >> setup.log 2>&1
     - TZ='Europe/London' date >> setup.log
